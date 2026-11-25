@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSphere | Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">E</div>
+            <span>Edu<span class="brand-light">Sphere</span></span>
+        </div>
+
+        <div class="side-heading">WORKSPACE</div>
+
+        <nav class="navigation">
+            <a href="#overview" class="nav-item active">
+                <span>▦</span> Overview
+            </a>
+            <a href="#profile" class="nav-item">
+                <span>♙</span> My Profile
+            </a>
+            <a href="#subjects" class="nav-item">
+                <span>▤</span> My Courses
+            </a>
+            <a href="#timetable" class="nav-item">
+                <span>▦</span> Timetable
+            </a>
+            <a href="#attendance" class="nav-item">
+                <span>◷</span> Attendance
+            </a>
+            <a href="#marks" class="nav-item">
+                <span>◫</span> Examination
+            </a>
+        </nav>
+
+        <div class="side-heading campus-heading">CAMPUS</div>
+
+        <nav class="navigation">
+            <a href="#announcements" class="nav-item">
+                <span>▧</span> Announcements
+            </a>
+            <a href="#notifications" class="nav-item">
+                <span>♧</span> Notifications
+                <span class="nav-badge">3</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="support-card">
+                <div class="support-icon">✦</div>
+                <h4>Need assistance?</h4>
+                <p>Our academic support team is here to help you.</p>
+                <a href="#notifications">Get support →</a>
+            </div>
+
+            <div class="sidebar-user">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" alt="Student profile">
+                <div>
+                    <strong>Arjun Sharma</strong>
+                    <small>Student Account</small>
+                </div>
+                <span>•••</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP NAVIGATION -->
+        <header class="topbar">
+            <div class="breadcrumb">
+                Dashboard <span>/</span> Overview
+            </div>
+
+            <div class="topbar-right">
+                <div class="academic-year">2025 - 2026 Academic Year</div>
+                <a href="#notifications" class="notification-button">♧<i></i></a>
+                <div class="top-profile">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" alt="Profile">
+                    <span>Arjun Sharma</span>
+                    <b>⌄</b>
+                </div>
+            </div>
+        </header>
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome" id="overview">
+            <div>
+                <p class="welcome-label">TUESDAY, 25 NOVEMBER 2025</p>
+                <h1>Welcome back, Arjun <span>✦</span></h1>
+                <p class="welcome-description">
+                    Here's your academic performance and activities for today.
+                </p>
+            </div>
+
+            <div class="welcome-actions">
+                <span class="semester-tag">● Semester 04</span>
+                <a href="#timetable" class="primary-button">View Schedule ↗</a>
+            </div>
+        </section>
+
+        <!-- PROFILE BANNER -->
+        <section class="profile-banner" id="profile">
+
+            <div class="profile-details">
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300" alt="Arjun Sharma">
+                    <span class="online-status"></span>
+                </div>
+
+                <div class="profile-text">
+                    <div class="profile-name">
+                        <h2>Arjun Sharma</h2>
+                        <span class="verified">✓ Verified</span>
+                    </div>
+
+                    <p>Bachelor of Technology · Computer Science</p>
+
+                    <div class="profile-info">
+                        <span>STU2024-0186</span>
+                        <span>Year 02</span>
+                        <span>Section A</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-gpa">
+                <p>OVERALL GPA</p>
+                <h1>8.72 <small>/ 10.0</small></h1>
+                <span>↗ 0.34 improvement this semester</span>
+            </div>
+
+            <div class="banner-decoration"></div>
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon purple">◷</div>
+                    <span class="stat-change">↗ 2.4%</span>
+                </div>
+                <p>Attendance Rate</p>
+                <h2>92.8<span>%</span></h2>
+                <div class="progress-track">
+                    <div class="progress-fill purple-fill" style="width:92.8%"></div>
+                </div>
+                <small>Above minimum requirement</small>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon blue">✎</div>
+                    <span class="stat-change">↗ 4.2%</span>
+                </div>
+                <p>Average Marks</p>
+                <h2>86.4<span>%</span></h2>
+                <div class="progress-track">
+                    <div class="progress-fill blue-fill" style="width:86.4%"></div>
+                </div>
+                <small>Across all subjects</small>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon orange">▣</div>
+                    <span class="stat-neutral">This semester</span>
+                </div>
+                <p>Enrolled Subjects</p>
+                <h2>06</h2>
+                <div class="stat-footer">
+                    <span class="green-dot"></span> 4 Core · 2 Electives
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon green">✓</div>
+                    <span class="stat-change">On track</span>
+                </div>
+                <p>Assignments Completed</p>
+                <h2>18<span>/22</span></h2>
+                <div class="progress-track">
+                    <div class="progress-fill green-fill" style="width:81.8%"></div>
+                </div>
+                <small>4 assignments remaining</small>
+            </div>
+
+        </section>
+
+        <!-- DASHBOARD GRID -->
+        <section class="dashboard-grid">
+
+            <!-- TIMETABLE -->
+            <div class="panel timetable-panel" id="timetable">
+
+                <div class="panel-header">
+                    <div>
+                        <span class="section-label">YOUR SCHEDULE</span>
+                        <h3>Today's Timetable</h3>
+                    </div>
+                    <a href="#timetable" class="view-link">Full Schedule ↗</a>
+                </div>
+
+                <div class="date-navigation">
+                    <div class="date active-date">
+                        <strong>25</strong>
+                        <small>TUE</small>
+                    </div>
+                    <div class="date"><strong>26</strong><small>WED</small></div>
+                    <div class="date"><strong>27</strong><small>THU</small></div>
+                    <div class="date"><strong>28</strong><small>FRI</small></div>
+                    <div class="date"><strong>29</strong><small>SAT</small></div>
+                    <div class="date"><strong>30</strong><small>SUN</small></div>
+                </div>
+
+                <div class="class-list">
+
+                    <div class="class-row">
+                        <div class="class-time">09:00<small>10:00 AM</small></div>
+                        <div class="class-indicator purple-indicator"></div>
+                        <div class="class-details">
+                            <h4>Data Structures & Algorithms</h4>
+                            <p>Dr. Meera Rao · CS201</p>
+                        </div>
+                        <span class="room">Room 204</span>
+                    </div>
+
+                    <div class="class-row">
+                        <div class="class-time">10:15<small>11:15 AM</small></div>
+                        <div class="class-indicator blue-indicator"></div>
+                        <div class="class-details">
+                            <h4>Database Management Systems</h4>
+                            <p>Prof. K. Reddy · CS203</p>
+                        </div>
+                        <span class="room">Lab 03</span>
+                    </div>
+
+                    <div class="class-row">
+                        <div class="class-time">11:30<small>12:30 PM</small></div>
+                        <div class="class-indicator orange-indicator"></div>
+                        <div class="class-details">
+                            <h4>Computer Networks</h4>
+                            <p>Dr. S. Kumar · CS205</p>
+                        </div>
+                        <span class="room">Room 108</span>
+                    </div>
+
+                    <div class="class-row">
+                        <div class="class-time">12:30<small>01:30 PM</small></div>
+                        <div class="class-indicator gray-indicator"></div>
+                        <div class="class-details">
+                            <h4>Lunch Break</h4>
+                            <p>Campus Cafeteria</p>
+                        </div>
+                        <span class="room">Break</span>
+                    </div>
+
+                    <div class="class-row">
+                        <div class="class-time">01:30<small>02:30 PM</small></div>
+                        <div class="class-indicator green-indicator"></div>
+                        <div class="class-details">
+                            <h4>Engineering Mathematics</h4>
+                            <p>Prof. A. Iyer · MA202</p>
+                        </div>
+                        <span class="room">Room 302</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ATTENDANCE -->
+            <div class="panel attendance-panel" id="attendance">
+
+                <div class="panel-header">
+                    <div>
+                        <span class="section-label">ACADEMIC RECORD</span>
+                        <h3>Attendance Overview</h3>
+                    </div>
+                    <span class="menu-dots">•••</span>
+                </div>
+
+                <div class="attendance-chart">
+                    <div class="attendance-inner">
+                        <h2>92.8%</h2>
+                        <p>Overall</p>
+                    </div>
+                </div>
+
+                <div class="attendance-data">
+                    <div><span><i class="dot present"></i> Present</span><strong>116</strong></div>
+                    <div><span><i class="dot absent"></i> Absent</span><strong>09</strong></div>
+                    <div><span><i class="dot holiday"></i> Holidays</span><strong>05</strong></div>
+                </div>
+
+                <div class="attendance-alert">
+                    <span>✓</span>
+                    <p>Excellent! You are maintaining good attendance.</p>
+                </div>
+
+            </div>
+
+            <!-- SUBJECTS -->
+            <div class="panel subjects-panel" id="subjects">
+
+                <div class="panel-header">
+                    <div>
+                        <span class="section-label">YOUR LEARNING</span>
+                        <h3>My Subjects</h3>
+                    </div>
+                    <a href="#subjects" class="view-link">View All →</a>
+                </div>
+
+                <div class="subject-row">
+                    <div class="subject-image subject-purple">DS</div>
+                    <div class="subject-description">
+                        <h4>Data Structures</h4>
+                        <p>CS201 · Core Subject</p>
+                        <div class="progress-track"><div class="progress-fill purple-fill" style="width:94%"></div></div>
+                    </div>
+                    <strong>94%</strong>
+                </div>
+
+                <div class="subject-row">
+                    <div class="subject-image subject-blue">DB</div>
+                    <div class="subject-description">
+                        <h4>Database Management</h4>
+                        <p>CS203 · Core Subject</p>
+                        <div class="progress-track"><div class="progress-fill blue-fill" style="width:89%"></div></div>
+                    </div>
+                    <strong>89%</strong>
+                </div>
+
+                <div class="subject-row">
+                    <div class="subject-image subject-orange">CN</div>
+                    <div class="subject-description">
+                        <h4>Computer Networks</h4>
+                        <p>CS205 · Core Subject</p>
+                        <div class="progress-track"><div class="progress-fill orange-fill" style="width:84%"></div></div>
+                    </div>
+                    <strong>84%</strong>
+                </div>
+
+                <div class="subject-row">
+                    <div class="subject-image subject-green">MA</div>
+                    <div class="subject-description">
+                        <h4>Engineering Mathematics</h4>
+                        <p>MA202 · Core Subject</p>
+                        <div class="progress-track"><div class="progress-fill green-fill" style="width:78%"></div></div>
+                    </div>
+                    <strong>78%</strong>
+                </div>
+
+            </div>
+
+            <!-- MARKS -->
+            <div class="panel marks-panel" id="marks">
+
+                <div class="panel-header">
+                    <div>
+                        <span class="section-label">PERFORMANCE ANALYTICS</span>
+                        <h3>Academic Results</h3>
+                    </div>
+                    <span class="result-tag">Mid-Term</span>
+                </div>
+
+                <div class="marks-overview">
+                    <div>
+                        <p>Overall Average</p>
+                        <h2>86.4%</h2>
+                    </div>
+                    <span>↗ 4.2% improvement</span>
+                </div>
+
+                <div class="marks-chart">
+                    <div class="mark-line">
+                        <span>Data Structures</span>
+                        <strong>94/100</strong>
+                        <div class="progress-track"><div class="progress-fill purple-fill" style="width:94%"></div></div>
+                    </div>
+
+                    <div class="mark-line">
+                        <span>Database Management</span>
+                        <strong>89/100</strong>
+                        <div class="progress-track"><div class="progress-fill blue-fill" style="width:89%"></div></div>
+                    </div>
+
+                    <div class="mark-line">
+                        <span>Computer Networks</span>
+                        <strong>84/100</strong>
+                        <div class="progress-track"><div class="progress-fill orange-fill" style="width:84%"></div></div>
+                    </div>
+
+                    <div class="mark-line">
+                        <span>Engineering Mathematics</span>
+                        <strong>78/100</strong>
+                        <div class="progress-track"><div class="progress-fill green-fill" style="width:78%"></div></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ANNOUNCEMENTS -->
+            <div class="panel announcements-panel" id="announcements">
+
+                <div class="panel-header">
+                    <div>
+                        <span class="section-label">CAMPUS NEWS</span>
+                        <h3>Latest Announcements</h3>
+                    </div>
+                    <a href="#announcements" class="view-link">See All →</a>
+                </div>
+
+                <div class="announcement-item">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=200" alt="University students">
+                    <div>
+                        <span class="announcement-label important">IMPORTANT</span>
+                        <h4>Mid-Semester Examinations</h4>
+                        <p>Examination timetable is now available. Check your schedule.</p>
+                        <small>Academic Office · 2 hours ago</small>
+                    </div>
+                </div>
+
+                <div class="announcement-item">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200" alt="Technology event">
+                    <div>
+                        <span class="announcement-label event">EVENT</span>
+                        <h4>Annual Technical Fest 2025</h4>
+                        <p>Register for coding competitions and technical workshops.</p>
+                        <small>Student Council · Yesterday</small>
+                    </div>
+                </div>
+
+                <div class="announcement-item">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=200" alt="Library">
+                    <div>
+                        <span class="announcement-label general">GENERAL</span>
+                        <h4>Library Hours Extended</h4>
+                        <p>Central library remains open until 9 PM during exam week.</p>
+                        <small>Library · 2 days ago</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="panel notifications-panel" id="notifications">
+
+                <div class="panel-header">
+                    <div>
+                        <span class="section-label">RECENT ACTIVITY</span>
+                        <h3>Notifications</h3>
+                    </div>
+                    <span class="notification-count">03 New</span>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-symbol purple-symbol">✎</div>
+                    <div>
+                        <h4>Assignment Reminder</h4>
+                        <p>Submit your Python assignment before Friday.</p>
+                        <small>10:30 AM · Today</small>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-symbol blue-symbol">▣</div>
+                    <div>
+                        <h4>Exam Schedule Updated</h4>
+                        <p>Your examination timetable has been updated.</p>
+                        <small>04:15 PM · Yesterday</small>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-symbol green-symbol">✓</div>
+                    <div>
+                        <h4>Attendance Updated</h4>
+                        <p>Your attendance records are now available.</p>
+                        <small>09:00 AM · Yesterday</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 EduSphere Student Portal. All rights reserved.</p>
+            <p>Designed for better learning <span>✦</span></p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
